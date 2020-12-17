@@ -2,5 +2,5 @@
 def common_elements(set_1, set_2):
     a = set(set_1)
     b = set(set_2)
-    if (a & b):
-        return (a & b)
+    if len(a.intersection(b)) > 0:
+        return (a.intersection(b))
