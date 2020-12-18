@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     int_val = 0
     if not isinstance(roman_string, str):
         return 0
-    if roman_string is None or not roman_val:
+    if roman_string is None or not rom_val:
         return 0
     for i in range(len(s)):
         if i > 0 and rom_val[s[i]] > rom_val[s[i - 1]]:
