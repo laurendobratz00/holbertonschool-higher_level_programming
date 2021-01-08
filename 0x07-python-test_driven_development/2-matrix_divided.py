@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+""" docstring """
+
+
+def matrix_divided(matrix, div):
+    """ this is a matrix divided by div """
+
+    if isinstance(div, (int, float)) == False:
+        raise TypeError("div must be a number")
+
+    if div is 0:
+        raise ZeroDivisionError("division by zero")
+
+    if matrix:
+        return [list(map(lambda x: (x / div), x)) for x in matrix]
