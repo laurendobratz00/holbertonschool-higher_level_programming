@@ -84,4 +84,3 @@ class Rectangle:
         """ prints message when an instance is deleted """
         print('Bye rectangle...')
         type(self).number_of_instances -= 1
-
