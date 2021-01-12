@@ -55,9 +55,9 @@ class Rectangle:
         """ printing the rectangle with # """
         output = ""
         if self.width is 0:
-            print()
+            return ""
         if self.height is 0:
-            print()
+            return ""
         for x in range(self.height):
             for y in range(self.width):
                 output += "#"
