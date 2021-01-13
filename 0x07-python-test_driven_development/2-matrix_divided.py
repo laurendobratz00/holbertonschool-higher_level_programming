@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     len1 = len(matrix[0])
 
     for x, y in enumerate(matrix):
-        if len(y) != len1:
+        if len(y) is not len1:
             raise TypeError("Each row of the matrix must have the same size")
 
 #    if not isinstance(div, (int, float)):
