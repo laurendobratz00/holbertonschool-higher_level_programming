@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" funct that appends string at end of a txt file, returns # of chars added """
+""" funct appends string at end of a txt file, returns # of chars added """
 
 
 def append_write(filename="", text=""):
