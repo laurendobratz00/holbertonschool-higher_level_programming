@@ -2,6 +2,7 @@
 """ Class MyList that inherits from list
 """
 
+
 class MyList(list):
     """ A class MyList that prints a sorted list
     """
