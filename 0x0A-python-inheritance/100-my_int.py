@@ -2,8 +2,8 @@
 """ defines rebel int class """
 
 
-class MyInt(int)
-""" class myint """
+class MyInt(int):
+    """ class myint """
 
     def __eq__(self, other):
         """ returns opposites """
