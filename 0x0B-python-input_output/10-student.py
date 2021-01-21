@@ -2,7 +2,6 @@
 """ class student """
 
 
-
 class Student:
     """ class student """
     def __init__(self, first_name, last_name, age):
@@ -14,7 +13,7 @@ class Student:
     def to_json(self):
         """ public method """
         if attrs is None or type(attrs) is not list
-            return self.__dict__
+        return self.__dict__
         else:
             n = {}
             for x in self.__dict__:
