@@ -14,10 +14,11 @@ class Student():
         """ public method """
         if attrs is None:
             return self.__dict__
-        else:
-            n = {}
-            for x in self.__dict__:
-                for y in attrs:
-                    if x is y:
-                        n[x] = self.__dict__[x]
-            return n
+        return ({key: value for key, value in self.__dict__, if key in attrs})
+#        else:
+#            n = {}
+#            for x in self.__dict__:
+#                for y in attrs:
+#                    if x is y:
+#                        n[x] = self.__dict__[x]
+#            return n
