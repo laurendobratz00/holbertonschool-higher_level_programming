@@ -12,8 +12,8 @@ class Student():
 
     def to_json(self):
         """ public method """
-        if attrs is None or type(attrs) is not list
-        return self.__dict__
+        if attrs is None or type(attrs) is not list:
+            return self.__dict__
         else:
             n = {}
             for x in self.__dict__:
