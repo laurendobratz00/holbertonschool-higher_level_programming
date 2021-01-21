@@ -12,7 +12,7 @@ class Student():
 
     def to_json(self):
         """ public method """
-        if attrs is None or type(attrs) is not list:
+        if attrs is None:
             return self.__dict__
         else:
             n = {}
