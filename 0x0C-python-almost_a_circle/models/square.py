@@ -49,3 +49,11 @@ class Square(Rectangle):
             if "y" in kwargs:
                 self.y = kwargs["y"]
 
+    def to_dictionary(self):
+        """ adding public method that returns the dict repr of a square """
+        mySquare = {}
+        mySquare["id"] = self.id
+        mySquare["size"] = self.size
+        mySquare["x"] = self.x
+        mySquare["y"] = self.y
+        return mySquare
