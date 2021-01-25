@@ -45,3 +45,13 @@ class Base:
             return "[]"
         else:
             return (json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ class method that returns an instance """
+        if cls.__name__ is "Rectangle":
+            dummyobject = cls(1, 2)
+        if cls.__name__ is "Square":
+            dummyobject = cls(1)
+        dummyobject.update(**dictionary)
+        return dummyobject
