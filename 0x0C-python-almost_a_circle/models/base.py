@@ -37,3 +37,11 @@ class Base:
         with open(filename, mode="w", encoding='utf-8') as a_file:
             a_file.write(cls.to_json_string(newobj))
             # convert newobj dict into json string, and write that to the file
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ returns the list of the JSON string representation json_string """
+        if json_string is None:
+            return "[]"
+        else:
+            return (json.loads(json_string))
