@@ -24,7 +24,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """ str method """
-        return ("[Rectangle] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                 self.width))
 
     def update(self, *args, **kwargs):
@@ -48,3 +48,4 @@ class Square(Rectangle):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
+
