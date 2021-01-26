@@ -90,10 +90,12 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """ returning rectangle """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
                 self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
+        """ assigns an arg to each attribute """
         if len(args):
             for i, j in enumerate(args):
                 if i == 0:
