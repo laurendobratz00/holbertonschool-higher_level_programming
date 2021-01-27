@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" test cases for Base """
 import unittest
 
 import json
@@ -8,16 +9,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 class TestBase(unittest.TestCase):
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-
-    def test_base(self):
-        self.assertTrue(True)
-
-    def test_base(self):
-        self.assertFalse(False)
+    """ class TestBase """
 
     def test_to_json_string(self):
         """ Test conv to json str in to_json_string method

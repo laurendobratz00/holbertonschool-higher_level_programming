@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" test cases for Rectangle """
 import unittest
 
 import json
@@ -8,7 +9,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 class TestRectangle(unittest.TestCase):
-
+    """ class TestRectangle """
     def test_area(self):
         """ test to check area of rectangle """
         rectangle = Rectangle(1, 2)
