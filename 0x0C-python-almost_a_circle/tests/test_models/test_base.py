@@ -14,9 +14,9 @@ class TestBase(unittest.TestCase):
     def test_to_json_string(self):
         """ Test conv to json str in to_json_string method
         """
-        self.assertEqual(Base.to_json_string(None), "[]")
+        self.assertEqual(Base.to_json_string(None), [])
         self.assertTrue(type(Base.to_json_string(None)), str)
-        self.assertEqual(Base.to_json_string([]), "[]")
+        self.assertEqual(Base.to_json_string([]), [])
         self.assertTrue(type(Base.to_json_string([])), str)
         myDict = {'id': 4, 'width': 3, 'height': 4, 'x': 1, 'y': 3}
         myDict2 = {'id': 3, 'width': 6, 'height': 2, 'x': 1, 'y': 9}
@@ -32,7 +32,7 @@ class TestBase(unittest.TestCase):
         jsonized = Base.from_json_string(string)
         self.assertEqual(len(jsonized), 2)
         self.assertTrue(type(Base.from_json_string(None)), str)
-        self.assertEqual(Base.from_json_string(None), "[]")
+        self.assertEqual(Base.from_json_string(None), [])
         self.assertTrue(type(jsonized) is list)
 
     def test_create_rect(self):
