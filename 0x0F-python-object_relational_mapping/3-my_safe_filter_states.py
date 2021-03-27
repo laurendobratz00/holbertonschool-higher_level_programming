@@ -9,13 +9,14 @@ if __name__ == "__main__":
                            passwd=argv[2], db=argv[3], charset="utf8")
     cur = conn.cursor()
     oldinput = argv[4]
+    newinput = ""
     for i in range(len(oldinput)):
-        if (oldinput[i]="\'" and i != 0):
+        if (oldinput[i] is "\'" and i != 0):
             break
         else:
             newinput += oldinput[i]
-    cur.execute("SELECT * FROM states WHERE name LIKE '{}' ORDER BY
-                id ASC".format(newinput))
+    cur.execute("SELECT * FROM states WHERE name LIKE '{}' ORDER BY id ASC"
+                .format(newinput))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
