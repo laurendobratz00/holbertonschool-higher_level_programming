@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" a script that prints the first State object from the database """
 if __name__ == "__main__":
     from sys import argv
     from sqlalchemy import create_engine
