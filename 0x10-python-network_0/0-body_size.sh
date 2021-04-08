@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sI -X POST "$1"
+curl -sI -X "$1" | grep -i Content-Length | awk '{print $2}'
